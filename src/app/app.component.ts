@@ -7,6 +7,8 @@ import { RippleModule} from "primeng/ripple";
 import {PrimeNGConfig} from "primeng/api";
 import {MultiSelectModule} from "primeng/multiselect";
 import {FormsModule} from "@angular/forms";
+import { NavbarComponent } from './layout/navbar/navbar.component';
+import { FooterComponent } from './layout/footer/footer.component'
 
 interface City {
   name: string,
@@ -16,7 +18,7 @@ interface City {
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ButtonModule, RippleModule, MultiSelectModule, FormsModule],
+  imports: [RouterOutlet, ButtonModule, RippleModule, MultiSelectModule, FormsModule, NavbarComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

@@ -1,0 +1,17 @@
+<div class="container mx-auto my-4">
+    <div class="home-search">
+        <img class="home-search__img" src="https://argonaut.au.reastatic.net/resi-property/prod/homepage-web/web_lrg-95837ae74f7256685373.avif" alt="Home" />
+        <p-tabView class="home-search__tab">
+            @for (tab of tabs; track $index) {
+                <p-tabPanel class="home-search__tab-title" [header]="tab.title">
+                    <p-multiSelect class="home-search__multi-select" [options]="cities" [(ngModel)]="selectedCities" optionLabel="name" placeholder="Loại Nhà Đất"></p-multiSelect>
+                    <span class="home-search__menu">
+                    <input class="home-search__input" type="text" pInputText placeholder="Từ khóa" />
+                    <button class="home-search__button" type="button" pButton label="Tìm kiếm"></button>
+                </span>
+                </p-tabPanel>
+            }
+        </p-tabView>
+    </div>
+</div>
+
