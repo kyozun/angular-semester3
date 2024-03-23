@@ -1,0 +1,9 @@
+.news-hover {
+  background: #f2f2f2;
+  color: #505050;
+}
+
+.news-hover:hover {
+  background: #ffeceb;
+  color: #74150f;
+}
